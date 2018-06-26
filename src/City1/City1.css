@@ -1,0 +1,50 @@
+.City1 {
+  position: relative;
+  width: 300px;
+  height: 270px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.City1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-out;
+  box-shadow: inset 0px -81px 98px 0 transparent;
+  background-image: linear-gradient(
+    147deg,
+    rgba(255, 229, 59, 0.42) 0%,
+    rgba(255, 37, 37, 0.26) 74%
+  );
+}
+
+.City1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.City1 .Details {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  z-index: 3;
+  padding: 15px;
+  left: 0;
+  right: 0;
+  text-align: left;
+  transition: all 0.3s ease-out;
+}
+
+.City1 .Details h5 {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0;
+}

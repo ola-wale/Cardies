@@ -1,0 +1,9 @@
+.Contents {
+  padding: 15px;
+}
+
+.Contents .Profile,
+.Contents .City1 {
+  display: inline-block;
+  margin-right: 15px;
+}

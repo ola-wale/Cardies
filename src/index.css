@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400");
+
+:root {
+  --accentColor: #60dafb;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+img {
+  max-width: 100%;
+}
