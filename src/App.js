@@ -13,7 +13,11 @@ class App extends Component {
             name="Donald Duck"
             roles={["Duck", "Bird", "Disney Character", "Mickey's Friend"]}
           />
-          <City1 name="Amsterdam" country="Netherlands" />
+          <City1
+            name="Amsterdam"
+            src="https://thumbs.dreamstime.com/b/rijksmuseum-amsterdam-museum-words-i-amsterdam-netherlands-august-august-61874773.jpg"
+            country="Netherlands"
+          />
         </div>
       </div>
     );

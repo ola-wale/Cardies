@@ -9,6 +9,7 @@ export class City1 extends Component {
     this.hoverTimeoutId = 0;
     this.country = props.country || "";
     this.city = props.name || "";
+    this.src = props.src || "";
     this.mouseEnter = this.mouseEnter.bind(this);
     this.mouseLeave = this.mouseLeave.bind(this);
     this.mouseMove = this.mouseMove.bind(this);
@@ -22,10 +23,7 @@ export class City1 extends Component {
         onMouseMove={this.mouseMove}
         onMouseLeave={this.mouseLeave}
         className="City1">
-        <img
-          alt="ams"
-          src="https://thumbs.dreamstime.com/b/rijksmuseum-amsterdam-museum-words-i-amsterdam-netherlands-august-august-61874773.jpg"
-        />
+        <img alt={this.city} src={this.src} />
         <div className="Details">
           <h5>{this.city}</h5>
           <small>{this.country}</small>
